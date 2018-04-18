@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="repository.InscriereDBRepositoryTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2018-03-25T10:24:25" hostname="Meow" time="28.781">
+  <properties/>
+  <testcase name="getNrParticipantiProba" classname="repository.InscriereDBRepositoryTest" time="0.999"/>
+  <testcase name="delete" classname="repository.InscriereDBRepositoryTest" time="1.746"/>
+  <testcase name="findAll" classname="repository.InscriereDBRepositoryTest" time="0.436"/>
+  <testcase name="findOne" classname="repository.InscriereDBRepositoryTest" time="3.342"/>
+  <testcase name="update" classname="repository.InscriereDBRepositoryTest" time="2.22"/>
+  <testcase name="getParticipantiPtProba" classname="repository.InscriereDBRepositoryTest" time="6.57"/>
+  <testcase name="getProbePtParticipant" classname="repository.InscriereDBRepositoryTest" time="6.115"/>
+  <testcase name="save" classname="repository.InscriereDBRepositoryTest" time="4.366"/>
+  <testcase name="size" classname="repository.InscriereDBRepositoryTest" time="2.225"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

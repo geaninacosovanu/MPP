@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereClient.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereClient.iml" group="InscriereClient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereClient/InscriereClient_main.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereClient/InscriereClient_main.iml" group="InscriereClient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereClient/InscriereClient_test.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereClient/InscriereClient_test.iml" group="InscriereClient" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereModel/InscriereModel.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereModel/InscriereModel.iml" group="InscriereModel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereModel/InscriereModel_main.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereModel/InscriereModel_main.iml" group="InscriereModel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereModel/InscriereModel_test.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereModel/InscriereModel_test.iml" group="InscriereModel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereNetworking.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereNetworking.iml" group="InscriereNetworking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereNetworking/InscriereNetworking_main.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereNetworking/InscriereNetworking_main.iml" group="InscriereNetworking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereNetworking/InscriereNetworking_test.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereNetworking/InscriereNetworking_test.iml" group="InscriereNetworking" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereRepository.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereRepository.iml" group="InscriereRepository" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_main.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_main.iml" group="InscriereRepository" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_test.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_test.iml" group="InscriereRepository" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer.iml" group="InscriereServer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_main.iml" group="InscriereServer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_test.iml" group="InscriereServer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereServices/InscriereServices.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereServices/InscriereServices.iml" group="InscriereServices" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereServices/InscriereServices_main.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereServices/InscriereServices_main.iml" group="InscriereServices" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereServices/InscriereServices_test.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereServices/InscriereServices_test.iml" group="InscriereServices" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lab3GUIServer.iml" filepath="$PROJECT_DIR$/.idea/modules/Lab3GUIServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lab3GUIServer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Lab3GUIServer_main.iml" group="Lab3GUIServer" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Lab3GUIServer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Lab3GUIServer_test.iml" group="Lab3GUIServer" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+rootProject.name = 'Lab3GUIServer'
+include 'InscriereModel'
+include 'InscriereRepository'
+include 'InscriereServices'
+include 'InscriereClient'
+include 'InscriereServer'
+include 'InscriereNetworking'
+

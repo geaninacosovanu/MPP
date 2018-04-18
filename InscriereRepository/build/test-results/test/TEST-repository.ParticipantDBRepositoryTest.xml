@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="repository.ParticipantDBRepositoryTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-03-25T10:24:54" hostname="Meow" time="3.79">
+  <properties/>
+  <testcase name="delete" classname="repository.ParticipantDBRepositoryTest" time="0.46"/>
+  <testcase name="findAll" classname="repository.ParticipantDBRepositoryTest" time="1.352"/>
+  <testcase name="findOne" classname="repository.ParticipantDBRepositoryTest" time="0.783"/>
+  <testcase name="update" classname="repository.ParticipantDBRepositoryTest" time="0.245"/>
+  <testcase name="save" classname="repository.ParticipantDBRepositoryTest" time="0.528"/>
+  <testcase name="size" classname="repository.ParticipantDBRepositoryTest" time="0.231"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

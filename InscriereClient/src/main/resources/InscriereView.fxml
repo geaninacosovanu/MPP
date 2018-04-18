@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.InscriereController">
+    <top>
+        <AnchorPane prefHeight="0.0" prefWidth="630.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="buttonLogout" layoutX="606.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#handleLogoutBotton" text="Logout" />
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="tableViewProba" layoutX="49.0" layoutY="30.0" prefHeight="200.0" prefWidth="313.0">
+                    <columns>
+                        <TableColumn fx:id="tableColumnStil" prefWidth="78.0" text="Stil" />
+                        <TableColumn fx:id="tableColumnDistanta" prefWidth="116.0" text="Distanta (m)" />
+                        <TableColumn fx:id="tableColumnNrParticipanti" prefWidth="91.0" text="Nr. participanti" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <TableView fx:id="tableViewParticipant" layoutX="51.0" layoutY="255.0" prefHeight="200.0" prefWidth="310.0">
+                    <columns>
+                        <TableColumn fx:id="tableColumnNume" prefWidth="75.0" text="Nume" />
+                        <TableColumn fx:id="tableColumnProbe" prefWidth="75.0" text="Probe" />
+                        <TableColumn fx:id="tableColumnVarsta" prefWidth="75.0" text="Varsta" />
+                    </columns>
+                    <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                    </columnResizePolicy>
+                </TableView>
+                <ListView fx:id="listViewProbe" layoutX="472.0" layoutY="184.0" prefHeight="93.0" prefWidth="150.0" />
+                <TextField fx:id="textFieldNume" layoutX="473.0" layoutY="109.0" />
+                <Label layoutX="418.0" layoutY="113.0" text="Nume" />
+                <Label layoutX="418.0" layoutY="149.0" text="Varsta" />
+                <TextField fx:id="textFieldVarsta" layoutX="473.0" layoutY="145.0" />
+                <Button fx:id="buttonInscriere" layoutX="495.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#handleButtonInscriere" text="Inscriere" />
+                <Label layoutX="419.0" layoutY="222.0" text="Probe" />
+                <CheckBox fx:id="checkBoxParticipantExistent" layoutX="465.0" layoutY="293.0" mnemonicParsing="false" text="Participant existent" />
+            </children></AnchorPane>
+    </center>
+</BorderPane>

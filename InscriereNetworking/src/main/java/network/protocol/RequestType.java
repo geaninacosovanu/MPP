@@ -1,0 +1,5 @@
+package network.protocol;
+
+public enum RequestType {
+    LOGIN,LOGOUT,ADD_INSCRIERE, GET_ALLPROBEDTO,GET_PARTICIPANTIDTO,GET_PARTICIPANT
+}
