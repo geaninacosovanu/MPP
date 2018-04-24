@@ -4,16 +4,16 @@
     <bytecodeTargetLevel>
       <module name="InscriereClient_main" target="1.8" />
       <module name="InscriereClient_test" target="1.8" />
-      <module name="InscriereModel_main" target="1.9" />
-      <module name="InscriereModel_test" target="1.9" />
+      <module name="InscriereModel_main" target="1.8" />
+      <module name="InscriereModel_test" target="1.8" />
       <module name="InscriereNetworking_main" target="1.8" />
       <module name="InscriereNetworking_test" target="1.8" />
       <module name="InscriereRepository_main" target="1.9" />
       <module name="InscriereRepository_test" target="1.9" />
       <module name="InscriereServer_main" target="1.9" />
       <module name="InscriereServer_test" target="1.9" />
-      <module name="InscriereServices_main" target="1.9" />
-      <module name="InscriereServices_test" target="1.9" />
+      <module name="InscriereServices_main" target="1.8" />
+      <module name="InscriereServices_test" target="1.8" />
       <module name="Lab3GUIServer_main" target="1.8" />
       <module name="Lab3GUIServer_test" target="1.8" />
     </bytecodeTargetLevel>

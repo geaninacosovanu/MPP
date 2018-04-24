@@ -1,0 +1,74 @@
+syntax="proto3";
+package inscriere.protocol;
+
+option java_package = "network.protobuffProtocol";
+option java_outer_classname = "InscriereProtobufs";
+
+message User{
+    string username=1;
+    string password=2;
+}
+
+message InscriereDTO{
+    string nume=1;
+    int32 varsta=2;
+    repeated Proba probe=3;
+    bool existent=4;
+}
+
+message Proba{
+    int32 id=1;
+    string nume=2;
+    float distanta=3;
+}
+message ParticipantInscriere{
+    string nume=1;
+    int32 varsta=2;
+}
+
+message ProbaDTO{
+    Proba proba=1;
+    int32 nrParticipanti=2;
+}
+
+message ParticipantProbeDTO{
+    Participant participant=1;
+    repeated Proba probe=2;
+}
+
+
+message Participant{
+    string id=1;
+    string nume=2;
+    int32 varsta=3;
+}
+
+
+
+message InscriereRequest{
+    enum Type {Unkown=0; Login = 1; Logout = 2; AddInscriere = 3; GetAllProbeDto=4 ; GetParticipantiDto=5; GetParticipant=6;}
+
+    Type type = 1;
+
+
+    oneof payload{
+        User user = 2;
+        InscriereDTO inscriere=3;
+        int32 idProba=4;
+        Participant participant=5;
+    }
+}
+
+message InscriereResponse{
+    enum Type { Unknown=0; Ok = 1; Error = 2; GetAllProbeDto=3; GetParticipantiDto = 4; GetParticipant=5; NewInscriere=6;  }
+    Type type = 1;
+
+    // One of the following will be filled in, depending on the type.
+    string error = 2;
+    repeated ProbaDTO probeDto=3;
+    repeated ParticipantProbeDTO  participantProbeDto=4;
+    bool exists=5;
+    Participant participant = 6;
+
+}
+
