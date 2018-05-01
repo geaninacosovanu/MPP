@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+    <bean id="userVal" class="validator.UserValidator"/>
+
+    <bean id="userRepo" class="repository.UserDBRepository">
+        <constructor-arg ref="userVal"/>
+        <constructor-arg value="InscriereServer/src/main/resources/server.properties"/>
+    </bean>
+
+
+
+
+    <bean id="partVal" class="validator.ParticipantValidator"/>
+
+    <bean id="partRepo" class="repository.ParticipantDBRepository">
+        <constructor-arg ref="partVal"/>
+        <constructor-arg value="InscriereServer/src/main/resources/server.properties"/>
+
+    </bean>
+
+    <bean id="inscVal" class="validator.InscriereValidator"/>
+
+    <bean id="inscRepo" class="repository.InscriereDBRepository">
+        <constructor-arg ref="inscVal"/>
+        <constructor-arg value="InscriereServer/src/main/resources/server.properties"/>
+
+    </bean>
+
+    <bean id="probaVal" class="validator.ProbaValidator"/>
+
+    <bean id="probaRepo" class="repository.ProbaDBRepository">
+        <constructor-arg ref="probaVal"/>
+        <constructor-arg value="InscriereServer/src/main/resources/server.properties"/>
+
+    </bean>
+    <bean id="insService" class="InscriereService">
+        <constructor-arg index="0" ref="partRepo"/>
+        <constructor-arg index="1" ref="probaRepo"/>
+        <constructor-arg index="2" ref="inscRepo"/>
+        <constructor-arg index="3" ref="userRepo"/>
+    </bean>
+
+
+</beans>
