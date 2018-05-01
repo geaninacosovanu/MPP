@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import network.protobuffProtocol.ProtoInscriereProxy;
 import network.protocol.InscriereServerProxy;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -52,7 +53,7 @@ public class StartClient  extends Application {
 
         IInscriereService service= null;
         try {
-            service = new InscriereServerProxy(serverIP,serverPort);
+            service = new ProtoInscriereProxy(serverIP,serverPort);
             ctr.setService(service);
             Scene scene = new Scene(root);
             primaryStage.setResizable(false);

@@ -1,6 +1,4 @@
 syntax="proto3";
-package inscriere.protocol;
-
 option java_package = "network.protobuffProtocol";
 option java_outer_classname = "InscriereProtobufs";
 

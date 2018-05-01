@@ -5,20 +5,14 @@ import model.Proba;
 import model.User;
 import network.dto.InscriereDTO;
 import network.dto.ParticipantDTO;
-import network.protocol.Request;
-import network.protocol.RequestType;
-import network.protocol.Response;
-import network.protocol.ResponseType;
 import services.IInscriereObserver;
 import services.IInscriereService;
 import services.InscriereServiceException;
 import services.dto.ParticipantProbeDTO;
 import services.dto.ProbaDTO;
-import validator.ValidationException;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.ObjectInputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.util.List;
@@ -43,18 +37,26 @@ public class ProtoInscriereProxy implements IInscriereService {
         this.port = port;
         qresponses = new LinkedBlockingQueue<>();
         initializeConnection();
+
     }
 
     @Override
     public void logout(User u, IInscriereObserver client) throws InscriereServiceException {
-        Request req=new Request.Builder().type(RequestType.LOGOUT).build();
-        //sendRequest(req);
+        InscriereProtobufs.InscriereRequest req= ProtoUtils.createLogoutRequest(u);
+        sendRequest(req);
+
+        InscriereProtobufs.InscriereResponse response=readResponse();
         closeConnection();
+        if (response.getType()==InscriereProtobufs.InscriereResponse.Type.Error){
+            String errorText=ProtoUtils.getError(response);
+            throw new InscriereServiceException(errorText);
+        }
     }
 
     @Override
     public boolean login(String username, String parola, IInscriereObserver client) throws InscriereServiceException {
-
+        if(connection.isClosed())
+            initializeConnection();
         User user = new User(username, parola);
         sendRequest(ProtoUtils.createLoginRequest(user));
         boolean exist = false;
@@ -73,14 +75,14 @@ public class ProtoInscriereProxy implements IInscriereService {
 
     @Override
     public List<ProbaDTO> getAllProba() throws InscriereServiceException {
-        Request request = new Request.Builder().type(RequestType.GET_ALLPROBEDTO).build();
+        InscriereProtobufs.InscriereRequest request = ProtoUtils.createGetAllProbaDTORequest();
         sendRequest(request);
-        Response response = readResponse();
-        if (response.getType() == ResponseType.ERROR) {
-            String err = response.getData().toString();
+        InscriereProtobufs.InscriereResponse response = readResponse();
+        if (response.getType() ==InscriereProtobufs.InscriereResponse.Type.Error) {
+            String err = ProtoUtils.getError(response);
             throw new InscriereServiceException(err);
         }
-        List<ProbaDTO> all = (List<ProbaDTO>) response.getData();
+        List<ProbaDTO> all = ProtoUtils.getAllProbeDTO(response);
         return all;
 
     }
@@ -88,26 +90,27 @@ public class ProtoInscriereProxy implements IInscriereService {
 
     @Override
     public List<ParticipantProbeDTO> getParticipanti(Integer idProba) throws InscriereServiceException {
-        Request request = new Request.Builder().type(RequestType.GET_PARTICIPANTIDTO).data(idProba).build();
+        InscriereProtobufs.InscriereRequest request = ProtoUtils.createGetParticipantiRequest(idProba);
         sendRequest(request);
-        Response response = readResponse();
-        if (response.getType() == ResponseType.ERROR) {
-            String err = response.getData().toString();
+        InscriereProtobufs.InscriereResponse response = readResponse();
+        if (response.getType() ==InscriereProtobufs.InscriereResponse.Type.Error) {
+            String err = ProtoUtils.getError(response);
             throw new InscriereServiceException(err);
         }
-        List<ParticipantProbeDTO> all = (List<ParticipantProbeDTO>) response.getData();
+        List<ParticipantProbeDTO> all = ProtoUtils.getAllParticipantiProbaDTO(response);
         return all;
     }
 
     @Override
-    public void saveInscriere(String nume, Integer varsta, List<Proba> probe, boolean existent) throws ValidationException, InscriereServiceException {
-        Request request = new Request.Builder().type(RequestType.ADD_INSCRIERE).data(new InscriereDTO(nume, varsta, probe, existent)).build();
+    public void saveInscriere(String nume, Integer varsta, List<Proba> probe, boolean existent) throws InscriereServiceException {
+        InscriereProtobufs.InscriereRequest request = ProtoUtils.createSaveInscriereRequest(new InscriereDTO(nume, varsta, probe, existent));
         sendRequest(request);
-        Response response = readResponse();
-        if (response.getType() == ResponseType.ERROR) {
-            String err = response.getData().toString();
+        InscriereProtobufs.InscriereResponse response = readResponse();
+        if (response.getType() == InscriereProtobufs.InscriereResponse.Type.Error) {
+            String err = ProtoUtils.getError(response);
             throw new InscriereServiceException(err);
         }
+
 
 
     }
@@ -115,13 +118,14 @@ public class ProtoInscriereProxy implements IInscriereService {
 
     @Override
     public Participant getParticipant(String nume, Integer varsta) throws InscriereServiceException {
-        Request request = new Request.Builder().type(RequestType.ADD_INSCRIERE).data(new ParticipantDTO(nume, varsta)).build();
+        InscriereProtobufs.InscriereRequest request = ProtoUtils.createGetParticipantRequest(new ParticipantDTO(nume, varsta));
         sendRequest(request);
-        Response response = readResponse();
-        if (response.getType() == ResponseType.ERROR) {
-            String err = response.getData().toString();
+        InscriereProtobufs.InscriereResponse response = readResponse();
+        if (response.getType() == InscriereProtobufs.InscriereResponse.Type.Error) {
+            String err = ProtoUtils.getError(response);
             throw new InscriereServiceException(err);
-        } else return (Participant) response.getData();
+        } else return  ProtoUtils.getParticipant(response);
+
     }
 
     private void closeConnection() {
@@ -196,7 +200,7 @@ public class ProtoInscriereProxy implements IInscriereService {
             while (!finished) {
                 try {
                     InscriereProtobufs.InscriereResponse response = InscriereProtobufs.InscriereResponse.parseDelimitedFrom(input);
-                    System.out.println("response received " + response);
+                    //System.out.println("response received " + response);
                     if (isUpdate(response)) {
                         handleUpdate(response);
                     } else {
