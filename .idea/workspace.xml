@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="405b95e0-1319-41d7-865f-b22a8789b7b3" name="Default" comment="Generated protoc class + start protobufProxy">
-      <change beforePath="" afterPath="$PROJECT_DIR$/InscriereClient/out/production/classes/StartProtobufClient.class" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/InscriereClient.iml" afterPath="$PROJECT_DIR$/.idea/modules/InscriereClient.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/InscriereClient/InscriereClient_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/InscriereClient/InscriereClient_main.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/InscriereClient/out/production/classes/StartClient.class" afterPath="$PROJECT_DIR$/InscriereClient/out/production/classes/StartClient.class" />
-      <change beforePath="$PROJECT_DIR$/InscriereClient/out/production/resources/client.properties" afterPath="$PROJECT_DIR$/InscriereClient/out/production/resources/client.properties" />
-      <change beforePath="$PROJECT_DIR$/InscriereClient/src/main/java/StartClient.java" afterPath="$PROJECT_DIR$/InscriereClient/src/main/java/StartClient.java" />
-      <change beforePath="$PROJECT_DIR$/InscriereClient/src/main/resources/client.properties" afterPath="$PROJECT_DIR$/InscriereClient/src/main/resources/client.properties" />
-      <change beforePath="$PROJECT_DIR$/InscriereNetworking/out/production/classes/network/protobuffProtocol/ProtoInscriereProxy$ReaderThread.class" afterPath="$PROJECT_DIR$/InscriereNetworking/out/production/classes/network/protobuffProtocol/ProtoInscriereProxy$ReaderThread.class" />
-      <change beforePath="$PROJECT_DIR$/InscriereNetworking/out/production/classes/network/protobuffProtocol/ProtoInscriereProxy.class" afterPath="$PROJECT_DIR$/InscriereNetworking/out/production/classes/network/protobuffProtocol/ProtoInscriereProxy.class" />
-      <change beforePath="$PROJECT_DIR$/InscriereNetworking/out/production/classes/network/protobuffProtocol/ProtoUtils.class" afterPath="$PROJECT_DIR$/InscriereNetworking/out/production/classes/network/protobuffProtocol/ProtoUtils.class" />
-      <change beforePath="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protobuffProtocol/ProtoInscriereProxy.java" afterPath="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protobuffProtocol/ProtoInscriereProxy.java" />
-      <change beforePath="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protobuffProtocol/ProtoUtils.java" afterPath="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protobuffProtocol/ProtoUtils.java" />
-      <change beforePath="$PROJECT_DIR$/proto/InsProtocol" afterPath="$PROJECT_DIR$/proto/InsProtocol" />
-    </list>
+    <list default="true" id="405b95e0-1319-41d7-865f-b22a8789b7b3" name="Default" comment="Generated protoc class + start protobufProxy" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -145,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProtoInscriereProxy.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProtoInscriereProxy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protobuffProtocol/ProtoInscriereProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+            <state relative-caret-position="394">
+              <caret line="217" column="9" lean-forward="true" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,7 +154,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProtoUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProtoUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protobuffProtocol/ProtoUtils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="346">
@@ -1886,7 +1871,7 @@
       <workItem from="1524921202747" duration="6327000" />
       <workItem from="1524990352986" duration="4919000" />
       <workItem from="1525177497185" duration="118000" />
-      <workItem from="1525177980545" duration="18000" />
+      <workItem from="1525177980545" duration="164000" />
     </task>
     <servers />
   </component>
@@ -1899,7 +1884,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101288000" />
+    <option name="totallyTimeSpent" value="101434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2327,20 +2312,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protobuffProtocol/ProtoInscriereProxy.java">
+    <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protobuffProtocol/ProtoUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        <state relative-caret-position="346">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protobuffProtocol/ProtoUtils.java">
+    <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protobuffProtocol/ProtoInscriereProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="394">
+          <caret line="217" column="9" lean-forward="true" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
