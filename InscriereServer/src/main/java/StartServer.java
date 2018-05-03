@@ -45,17 +45,19 @@ public class StartServer {
             System.err.println("Eroare la incarcarea fisierului de proprietati");
             return;
         }
-        String propFile = "InscriereServer/src/main/resources/server.properties";
-        Validator<User> userValidator = new UserValidator();
-        Validator<Proba> probaValidator = new ProbaValidator();
-        Validator<Participant> participantValidator = new ParticipantValidator();
-        Validator<Inscriere> inscriereValidator = new InscriereValidator();
-        IUserRepository userRepo = new UserDBRepository(userValidator, HibernateUtils.getSessionFactory("hibernate.cfg.xml"));
-        IProbaRepository probaRepo = new ProbaDBRepository(probaValidator, propFile);
-        IParticipantRepository partRepo = new ParticipantDBRepository(participantValidator, propFile);
-        IInscriereRepository insRepo = new InscriereDBRepository(inscriereValidator, propFile);
-
-        IInscriereService service = new InscriereService(partRepo, probaRepo, insRepo, userRepo);
+//        String propFile = "InscriereServer/src/main/resources/server.properties";
+//        Validator<User> userValidator = new UserValidator();
+//        Validator<Proba> probaValidator = new ProbaValidator();
+//        Validator<Participant> participantValidator = new ParticipantValidator();
+//        Validator<Inscriere> inscriereValidator = new InscriereValidator();
+//        IUserRepository userRepo = new UserDBRepository(userValidator,"hibernate.cfg.xml");
+//        IProbaRepository probaRepo = new ProbaDBRepository(probaValidator, propFile);
+//        IParticipantRepository partRepo = new ParticipantDBRepository(participantValidator, propFile);
+//        IInscriereRepository insRepo = new InscriereDBRepository(inscriereValidator, propFile);
+//
+//        IInscriereService service = new InscriereService(partRepo, probaRepo, insRepo, userRepo);
+        ApplicationContext factory = new ClassPathXmlApplicationContext("classpath:configurare.xml"); //obtinerea referintei catre un bean din container
+        IInscriereService service= factory.getBean(InscriereService.class);
         int serverPort = 5000;
         try {
             serverPort = Integer.parseInt(serverProps.getProperty("server.port"));

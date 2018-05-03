@@ -5,13 +5,16 @@ import model.Inscriere;
 import model.Participant;
 import model.Proba;
 import model.User;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import util.HibernateUtils;
 import utils.Pair;
 import validator.*;
 import java.io.File;
@@ -20,66 +23,38 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 import java.util.Properties;
 
 import static org.junit.Assert.*;
 
 public class UserDBRepositoryTest {
     Validator<User> userValidator = new UserValidator();
-    String propFile = "src/test/resources/bdTest.properties";
-
-    IUserRepository userRepository;
-
-    private static SessionFactory sessionFactory;
-    private static void close() {
-        if (sessionFactory != null)
-            sessionFactory.close();
-    }
-
-//    public UserDBRepositoryTest() {
-//        initialize();
-//        userRepository=new UserDBRepository(userValidator,sessionFactory);
-//    }
-//
-//    private static void initialize() {
-//        final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
-//                .configure() // configures settings from hibernateTest.cfg.xml
-//                .build();
-//        try {
-//            sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
-//        }
-//        catch (Exception e) {
-//            StandardServiceRegistryBuilder.destroy( registry );
-//        }
-//    }
+    String propFile = "hibernateTest.cfg.xml";
+    IUserRepository userRepository = new UserDBRepository(userValidator,propFile);
 
     @After
     public void tearDown() throws Exception {
         setUp();
+        //HibernateUtils.getSessionFactory(propFile).close();
     }
 
     @Before
-    public void setUp() throws Exception {
-        Connection connection = null;
-        Properties prop = new Properties();
-        try {
-            prop.load(new FileReader(new File(propFile).getAbsolutePath()));
-            JdbcUtils jdbc = new JdbcUtils(prop);
-            connection = jdbc.getConnection();
-
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-        try (Statement s = connection.createStatement()) {
+    public void setUp(){
+        try (Session s = HibernateUtils.getSessionFactory(propFile).openSession()) {
+            Transaction t = null;
             try {
-                s.executeUpdate("DELETE FROM main.User");
-            } catch (SQLException e) {
-                throw new RepositoryException(e.getMessage());
+                t=s.beginTransaction();
+                List<User> all= s.createQuery("from User").list();
+                all.forEach(u->s.delete(u));
+                t.commit();
+            } catch (RuntimeException e) {
+                System.out.println("erroare");
+                if(t!=null)
+                    t.rollback();
             }
-        } catch (SQLException e) {
-            throw new RepositoryException(e.getMessage());
         }
-        connection.close();
+
     }
 
     @Test

@@ -4,33 +4,39 @@ import model.User;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import util.HibernateUtils;
 import validator.ValidationException;
 import validator.Validator;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserDBRepository implements IUserRepository {
+    String confFile;
     private Validator<User> validator;
-    private SessionFactory sessionFactory;
 
-    public UserDBRepository(Validator<User> validator, SessionFactory sf) {
+    public UserDBRepository(Validator<User> validator, String conf) {
         this.validator = validator;
-        this.sessionFactory = sf;
+        this.confFile = conf;
     }
 
     @Override
     public Integer size() {
         Integer size = null;
-//        try(Statement s = connection.createStatement()) {
-//            try(ResultSet result=s.executeQuery("SELECT count(*) as nr FROM  User")){
-//                size=result.getInt("nr");
-//            }
-//        } catch (SQLException e) {
-//            throw new RepositoryException(e.getMessage());
-//        }
+        try (Session session = HibernateUtils.getSessionFactory(confFile).openSession()) {
+            Transaction t = null;
+            try {
+                t = session.beginTransaction();
+                size = ((Long) session.createQuery("select count(*) from User").uniqueResult()).intValue();
+                t.commit();
+            } catch (RuntimeException e) {
+                if (t != null)
+                    t.rollback();
+            }
+        }
         return size;
     }
 
@@ -38,20 +44,9 @@ public class UserDBRepository implements IUserRepository {
     @Override
     public void save(User entity) throws ValidationException {
         validator.validate(entity);
-        String generatedPassword = null;
-        try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update(entity.getParola().getBytes());
-            byte[] bytes = md.digest();
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < bytes.length; i++) {
-                sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
-            }
-            generatedPassword = sb.toString();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-        try (Session session = sessionFactory.openSession()) {
+        String generatedPassword;
+        generatedPassword = getEncryptedPassword(entity.getParola());
+        try (Session session = HibernateUtils.getSessionFactory(confFile).openSession()) {
             Transaction t = null;
             try {
                 t = session.beginTransaction();
@@ -69,74 +64,47 @@ public class UserDBRepository implements IUserRepository {
 
     @Override
     public void delete(String userId) {
-//        try (PreparedStatement s = connection.prepareStatement("DELETE FROM User WHERE userId=?")) {
-//            s.setString(1, userId);
-//            s.executeUpdate();
-//        } catch (SQLException e) {
-//            throw new RepositoryException(e.getMessage());
-//        }
+        try (Session session = HibernateUtils.getSessionFactory(confFile).openSession()) {
+            Transaction t = null;
+            try {
+                t = session.beginTransaction();
+                User u = session.createQuery("from User user where user.id=:id", User.class).setString("id", userId).uniqueResult();
+                session.delete(u);
+                t.commit();
+            } catch (RuntimeException ex) {
+                if (t != null)
+                    t.rollback();
 
+            }
+        }
     }
+
 
     @Override
     public void update(String userId, User entity) throws ValidationException {
-//        validator.validate(entity);
-//        String generatedPassword = null;
-//        try {
-//            MessageDigest md = MessageDigest.getInstance("MD5");
-//            md.update(entity.getParola().getBytes());
-//            byte[] bytes = md.digest();
-//            StringBuilder sb = new StringBuilder();
-//            for (int i = 0; i < bytes.length; i++) {
-//                sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
-//            }
-//            generatedPassword = sb.toString();
-//        } catch (NoSuchAlgorithmException e) {
-//            e.printStackTrace();
-//        }
-//        try (PreparedStatement s = connection.prepareStatement("UPDATE User SET parola=? WHERE userId=?")) {
-//            s.setString(1, generatedPassword);
-//            s.setString(2, userId);
-//            s.executeUpdate();
-//        } catch (SQLException e) {
-//            throw new RepositoryException(e.getMessage());
-//        }
+        validator.validate(entity);
+        try(Session s = HibernateUtils.getSessionFactory(confFile).openSession()){
+            Transaction t =null;
+            try{
+                t=s.beginTransaction();
+                User u= (User) s.load(User.class,new String(userId));
+                u.setParola(getEncryptedPassword(entity.getParola()));
+                t.commit();
+            }catch (RuntimeException ex) {
+                if (t != null)
+                    t.rollback();
+
+            }
+        }
+
+
     }
 
-    @Override
-    public User findOne(String userId) {
-        User user = null;
-//        try (PreparedStatement s = connection.prepareStatement("SELECT U.userId,U.parola FROM User U WHERE U.userId=?")) {
-//            s.setString(1, userId);
-//            ResultSet resultSet = s.executeQuery();
-//            user = new User(resultSet.getString("userId"), resultSet.getString("parola"));
-//        } catch (SQLException e) {
-//            throw new RepositoryException(e.getMessage());
-//        }
-        return user;
-    }
-
-    @Override
-    public Iterable<User> findAll() {
-        List<User> all = new ArrayList<>();
-//        try (Statement s = connection.createStatement()) {
-//            try (ResultSet result = s.executeQuery("SELECT * FROM  User")) {
-//                while (result.next()) {
-//                    all.add(new User(result.getString("userId"), result.getString("parola")));
-//                }
-//            }
-//        } catch (SQLException e) {
-//            throw new RepositoryException(e.getMessage());
-//        }
-        return all;
-    }
-
-    @Override
-    public boolean exists(User u) {
-        String generatedPassword = null;
+    private String getEncryptedPassword(String parola) {
+        String generatedPassword =null ;
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update(u.getParola().getBytes());
+            md.update(parola.getBytes());
             byte[] bytes = md.digest();
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < bytes.length; i++) {
@@ -146,166 +114,59 @@ public class UserDBRepository implements IUserRepository {
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
-        try (Session session = sessionFactory.openSession()) {
-           User u1 =(User)session.createQuery("from User user where user.id=:id and user.parola=:par").setString("id",u.getId()).setString("par",generatedPassword).setMaxResults(1).uniqueResult();
-           if(u1!=null)
-               return true;
-           return false;
-        }
-
-
-    }
-}
-/*
-public class UserDBRepository implements IUserRepository {
-    private Validator<User> validator;
-    private Connection connection;
-
-    public UserDBRepository(Validator<User> validator,String propFile) {
-        this.validator=validator;
-        Properties prop= new Properties();
-        try {
-            prop.load(new FileReader(new File(propFile).getAbsolutePath()));
-            JdbcUtils jdbc=new JdbcUtils(prop);
-            connection=jdbc.getConnection();
-
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    @Override
-    public Integer size() {
-        Integer size=null;
-        try(Statement s = connection.createStatement()) {
-            try(ResultSet result=s.executeQuery("SELECT count(*) as nr FROM  User")){
-                size=result.getInt("nr");
-            }
-        } catch (SQLException e) {
-            throw new RepositoryException(e.getMessage());
-        }
-        return size;
-    }
-
-    @Override
-    public void save(User entity) throws ValidationException {
-        validator.validate(entity);
-        String generatedPassword=null;
-        try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update(entity.getParola().getBytes());
-            byte[] bytes = md.digest();
-            StringBuilder sb = new StringBuilder();
-            for(int i=0; i< bytes.length ;i++)
-            {
-                sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
-            }
-            generatedPassword = sb.toString();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-        try (PreparedStatement s = connection.prepareStatement("insert into user(userId, parola) values (?,?)")){
-            s.setString(1,entity.getId());
-            s.setString(2,generatedPassword);
-            s.executeUpdate();
-        } catch (SQLException e) {
-            throw new RepositoryException(e.getMessage());
-        }
-
-    }
-
-    @Override
-    public void delete(String userId) {
-        try (PreparedStatement s = connection.prepareStatement("DELETE FROM User WHERE userId=?")){
-            s.setString(1,userId);
-            s.executeUpdate();
-        } catch (SQLException e) {
-            throw new RepositoryException(e.getMessage());
-        }
-
-    }
-
-    @Override
-    public void update(String userId, User entity) throws ValidationException {
-        validator.validate(entity);
-        String generatedPassword=null;
-        try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update(entity.getParola().getBytes());
-            byte[] bytes = md.digest();
-            StringBuilder sb = new StringBuilder();
-            for(int i=0; i< bytes.length ;i++)
-            {
-                sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
-            }
-            generatedPassword = sb.toString();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-        try ( PreparedStatement s = connection.prepareStatement("UPDATE User SET parola=? WHERE userId=?")) {
-            s.setString(1,generatedPassword);
-            s.setString(2,userId);
-            s.executeUpdate();
-        } catch (SQLException e) {
-            throw new RepositoryException(e.getMessage());
-        }
+        return generatedPassword;
     }
 
     @Override
     public User findOne(String userId) {
-        User user=null;
-        try (PreparedStatement s = connection.prepareStatement("SELECT U.userId,U.parola FROM User U WHERE U.userId=?")){
-            s.setString(1,userId);
-            ResultSet resultSet =s.executeQuery();
-            user = new User(resultSet.getString("userId"),resultSet.getString("parola"));
-        } catch (SQLException e) {
-            throw new RepositoryException(e.getMessage());
+        User user = null;
+        try (Session s =HibernateUtils.getSessionFactory(confFile).openSession()){
+            Transaction t =null;
+            try {
+                t =s.beginTransaction();
+                user = s.createQuery("from User user where user.id=:id",User.class).setString("id",userId).uniqueResult();
+                t.commit();
+            }catch (RuntimeException ex) {
+                if (t != null)
+                    t.rollback();
+
+            }
         }
         return user;
     }
 
     @Override
     public Iterable<User> findAll() {
-        List<User> all=new ArrayList<>();
-        try(Statement s = connection.createStatement()) {
-            try(ResultSet result=s.executeQuery("SELECT * FROM  User")){
-                while(result.next()){
-                    all.add(new User(result.getString("userId"),result.getString("parola")));
-                }
+        List<User> all = new ArrayList<>();
+        try (Session s = HibernateUtils.getSessionFactory(confFile).openSession()) {
+            Transaction t = null;
+            try {
+                t = s.beginTransaction();
+                all = s.createQuery("from User").list();
+                t.commit();
+            } catch (RuntimeException ex) {
+                if (t != null)
+                    t.rollback();
+
             }
-        } catch (SQLException e) {
-            throw new RepositoryException(e.getMessage());
+
         }
+
+
         return all;
     }
 
     @Override
     public boolean exists(User u) {
-        String generatedPassword=null;
-        try {
-            MessageDigest md = MessageDigest.getInstance("MD5");
-            md.update(u.getParola().getBytes());
-            byte[] bytes = md.digest();
-            StringBuilder sb = new StringBuilder();
-            for(int i=0; i< bytes.length ;i++)
-            {
-                sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
-            }
-            generatedPassword = sb.toString();
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-        try (PreparedStatement s = connection.prepareStatement("SELECT COUNT (*) AS Nr FROM User U WHERE U.userId=? AND U.parola=?")){
-            s.setString(1,u.getId());
-            s.setString(2,generatedPassword);
-            ResultSet resultSet =s.executeQuery();
-            resultSet.next();
-            if(resultSet.getInt("Nr") == 0)
-                return false;
-            return true;
-        } catch (SQLException e) {
-            throw new RepositoryException(e.getMessage());
+        String generatedPassword = null;
+        generatedPassword = getEncryptedPassword(u.getParola());
+        try (Session session = HibernateUtils.getSessionFactory(confFile).openSession()) {
+            User u1 = (User) session.createQuery("from User user where user.id=:id and user.parola=:par").setString("id", u.getId()).setString("par", generatedPassword).setMaxResults(1).uniqueResult();
+            if (u1 != null)
+                return true;
+            return false;
         }
 
+
     }
-}*/
+}

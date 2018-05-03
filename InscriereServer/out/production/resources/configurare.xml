@@ -6,7 +6,7 @@
 
     <bean id="userRepo" class="repository.UserDBRepository">
         <constructor-arg ref="userVal"/>
-        <constructor-arg value="InscriereServer/src/main/resources/server.properties"/>
+        <constructor-arg value="hibernate.cfg.xml"/>
     </bean>
 
 

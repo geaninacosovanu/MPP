@@ -1,55 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="405b95e0-1319-41d7-865f-b22a8789b7b3" name="Default" comment="Generated protoc class + start protobufProxy">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_core_2_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_xml_bind_jaxb_impl_2_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__dom4j_dom4j_1_6_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_activation_activation_1_1_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_xml_bind_jaxb_api_2_3_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_2_10_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_20_0_GA.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_jandex_2_0_3_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_0_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/InscriereRepository/src/main/java/util/HibernateUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/InscriereServer/src/main/java/org/hibernate/dialect/SQLiteDialect.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/InscriereServer/src/main/java/org/hibernate/dialect/SQLiteDialectIdentityColumnSupport.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/InscriereServer/src/main/resources/User.hbm.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/InscriereServer/src/main/resources/hibernate.cfg.xml" />
+    <list default="true" id="405b95e0-1319-41d7-865f-b22a8789b7b3" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_dialect_hibernate_dialect_hibernate_core_5_2_10_Final.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_2_16_5_2_16.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.0/taskHistory/taskHistory.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/InscriereClient/InscriereClient_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/InscriereClient/InscriereClient_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__antlr_antlr_2_7_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_3_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_hibernate_core_5_2_10_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_javassist_javassist_3_20_0_GA.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_jandex_2_0_3_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_1_Final.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_main.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer.iml" afterPath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_main.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_test.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/InscriereClient/out/production/classes/gui/InscriereController.class" afterPath="$PROJECT_DIR$/InscriereClient/out/production/classes/gui/InscriereController.class" />
-      <change beforePath="$PROJECT_DIR$/InscriereClient/src/main/java/gui/InscriereController.java" afterPath="$PROJECT_DIR$/InscriereClient/src/main/java/gui/InscriereController.java" />
-      <change beforePath="$PROJECT_DIR$/InscriereModel/out/production/classes/model/User.class" afterPath="$PROJECT_DIR$/InscriereModel/out/production/classes/model/User.class" />
-      <change beforePath="$PROJECT_DIR$/InscriereModel/src/main/java/model/User.java" afterPath="$PROJECT_DIR$/InscriereModel/src/main/java/model/User.java" />
       <change beforePath="$PROJECT_DIR$/InscriereRepository/build.gradle" afterPath="$PROJECT_DIR$/InscriereRepository/build.gradle" />
       <change beforePath="$PROJECT_DIR$/InscriereRepository/out/production/classes/repository/UserDBRepository.class" afterPath="$PROJECT_DIR$/InscriereRepository/out/production/classes/repository/UserDBRepository.class" />
-      <change beforePath="$PROJECT_DIR$/InscriereRepository/out/test/classes/repository/InscriereDBRepositoryTest.class" afterPath="$PROJECT_DIR$/InscriereRepository/out/test/classes/repository/InscriereDBRepositoryTest.class" />
-      <change beforePath="$PROJECT_DIR$/InscriereRepository/out/test/classes/repository/ParticipantDBRepositoryTest.class" afterPath="$PROJECT_DIR$/InscriereRepository/out/test/classes/repository/ParticipantDBRepositoryTest.class" />
-      <change beforePath="$PROJECT_DIR$/InscriereRepository/out/test/classes/repository/ProbaDBRepositoryTest.class" afterPath="$PROJECT_DIR$/InscriereRepository/out/test/classes/repository/ProbaDBRepositoryTest.class" />
+      <change beforePath="$PROJECT_DIR$/InscriereRepository/out/production/classes/util/HibernateUtils.class" afterPath="$PROJECT_DIR$/InscriereRepository/out/production/classes/util/HibernateUtils.class" />
       <change beforePath="$PROJECT_DIR$/InscriereRepository/out/test/classes/repository/UserDBRepositoryTest.class" afterPath="$PROJECT_DIR$/InscriereRepository/out/test/classes/repository/UserDBRepositoryTest.class" />
+      <change beforePath="$PROJECT_DIR$/InscriereRepository/out/test/resources/UserTest.hbm.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/InscriereRepository/out/test/resources/hibernateTest.cfg.xml" afterPath="$PROJECT_DIR$/InscriereRepository/out/test/resources/hibernateTest.cfg.xml" />
       <change beforePath="$PROJECT_DIR$/InscriereRepository/src/main/java/repository/UserDBRepository.java" afterPath="$PROJECT_DIR$/InscriereRepository/src/main/java/repository/UserDBRepository.java" />
       <change beforePath="$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java" afterPath="$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java" />
+      <change beforePath="$PROJECT_DIR$/InscriereRepository/src/test/resources/hibernateTest.cfg.xml" afterPath="$PROJECT_DIR$/InscriereRepository/src/test/resources/hibernateTest.cfg.xml" />
       <change beforePath="$PROJECT_DIR$/InscriereServer/build.gradle" afterPath="$PROJECT_DIR$/InscriereServer/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/classes/InscriereService.class" afterPath="$PROJECT_DIR$/InscriereServer/out/production/classes/InscriereService.class" />
       <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/classes/StartServer.class" afterPath="$PROJECT_DIR$/InscriereServer/out/production/classes/StartServer.class" />
-      <change beforePath="$PROJECT_DIR$/InscriereServer/src/main/java/InscriereService.java" afterPath="$PROJECT_DIR$/InscriereServer/src/main/java/InscriereService.java" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/classes/org/hibernate/dialect/SQLiteDialect$1.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/classes/org/hibernate/dialect/SQLiteDialect$2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/classes/org/hibernate/dialect/SQLiteDialect$3.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/classes/org/hibernate/dialect/SQLiteDialect$4.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/classes/org/hibernate/dialect/SQLiteDialect$SQLiteUniqueDelegate.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/classes/org/hibernate/dialect/SQLiteDialect.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/classes/org/hibernate/dialect/SQLiteDialectIdentityColumnSupport.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/resources/User.hbm.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/resources/configurare.xml" afterPath="$PROJECT_DIR$/InscriereServer/out/production/resources/configurare.xml" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/out/production/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/InscriereServer/out/production/resources/hibernate.cfg.xml" />
       <change beforePath="$PROJECT_DIR$/InscriereServer/src/main/java/StartServer.java" afterPath="$PROJECT_DIR$/InscriereServer/src/main/java/StartServer.java" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/src/main/java/org/hibernate/dialect/SQLiteDialect.java" afterPath="$PROJECT_DIR$/InscriereRepository/src/main/java/dialect/SQLiteDialect.java" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/src/main/java/org/hibernate/dialect/SQLiteDialectIdentityColumnSupport.java" afterPath="$PROJECT_DIR$/InscriereRepository/src/main/java/dialect/SQLiteDialectIdentityColumnSupport.java" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/src/main/resources/User.hbm.xml" afterPath="$PROJECT_DIR$/InscriereRepository/src/main/resources/repository/User.hbm.xml" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/src/main/resources/configurare.xml" afterPath="$PROJECT_DIR$/InscriereServer/src/main/resources/configurare.xml" />
+      <change beforePath="$PROJECT_DIR$/InscriereServer/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/InscriereServer/src/main/resources/hibernate.cfg.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -91,15 +92,6 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bdTest" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bdTest" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="server" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
@@ -112,13 +104,6 @@
         <item name="server" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="server" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="User: table" type="ffe0bd85:SqliteImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -135,9 +120,6 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/InscriereServices">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/InscriereNetworking">
           <activation />
         </task>
         <projects_view>
@@ -174,21 +156,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/hibernate.cfg.xml">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InscriereRepository/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="256">
+              <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User" pinned="false" current-in-tab="false">
-        <entry file="das://table:/e9167034/d2faee74-9f4c-4bf4-8c61-0f0dade2f2c9/main.User">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file leaf-file-name="InscriereController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InscriereClient/src/main/java/gui/InscriereController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-256">
+              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HibernateUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/util/HibernateUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -196,20 +191,8 @@
       <file leaf-file-name="UserDBRepositoryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-243">
-              <caret line="131" column="100" lean-forward="false" selection-start-line="131" selection-start-column="68" selection-end-line="131" selection-end-column="100" />
-              <folding>
-                <marker date="1525289960504" expanded="true" signature="2290:2311" ph="DELETE FROM main.User... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.hbm.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/User.hbm.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+            <state relative-caret-position="917">
+              <caret line="108" column="35" lean-forward="false" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -218,27 +201,19 @@
       <file leaf-file-name="UserDBRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/UserDBRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding>
-                <marker date="1525367296297" expanded="true" signature="820:852" ph="SELECT count... User" />
-                <marker date="1525367296297" expanded="true" signature="2290:2321" ph="DELETE FROM User... " />
-                <marker date="1525367296297" expanded="true" signature="3299:3338" ph="UPDATE User... " />
-                <marker date="1525367296297" expanded="true" signature="3728:3781" ph="SELECT U.use... User" />
-                <marker date="1525367296297" expanded="true" signature="4321:4340" ph="SELECT * FRO... User" />
-              </folding>
+            <state relative-caret-position="560">
+              <caret line="47" column="67" lean-forward="false" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HibernateUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/util/HibernateUtils.java">
+      <file leaf-file-name="hibernateTest.cfg.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InscriereRepository/src/test/resources/hibernateTest.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -246,41 +221,34 @@
       <file leaf-file-name="StartServer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/java/StartServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="180">
+              <caret line="52" column="90" lean-forward="false" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="90" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1525378289248" expanded="true" signature="2998:3089" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InscriereConcurrentServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/utils/InscriereConcurrentServer.java">
+      <file leaf-file-name="configurare.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/configurare.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+            <state relative-caret-position="128">
+              <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractConcurrentServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/utils/AbstractConcurrentServer.java">
+      <file leaf-file-name="SQLiteDialect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/dialect/SQLiteDialect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractServer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/utils/AbstractServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="256">
+              <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+              <folding>
+                <element signature="e#8259#8701#0" expanded="true" />
+                <element signature="e#8700#8701#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -293,9 +261,8 @@
         <option value="JUnit4 Test Class" />
         <option value="FxmlFile" />
         <option value="Enum" />
-        <option value="Interface" />
-        <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -303,7 +270,6 @@
     <findStrings>
       <find>finished</find>
       <find>log</find>
-      <find>mess</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1297,12 +1263,12 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="12198289290068" />
+        <entry key="$PROJECT_DIR$" value="12198435437745" />
         <entry key="$PROJECT_DIR$/InscriereClient/build.gradle" value="896196987" />
         <entry key="$PROJECT_DIR$/InscriereModel/build.gradle" value="1300206813" />
         <entry key="$PROJECT_DIR$/InscriereNetworking/build.gradle" value="3298192742" />
-        <entry key="$PROJECT_DIR$/InscriereRepository/build.gradle" value="3186852502" />
-        <entry key="$PROJECT_DIR$/InscriereServer/build.gradle" value="3173881286" />
+        <entry key="$PROJECT_DIR$/InscriereRepository/build.gradle" value="1622834620" />
+        <entry key="$PROJECT_DIR$/InscriereServer/build.gradle" value="2899436537" />
         <entry key="$PROJECT_DIR$/InscriereServices/build.gradle" value="3335616895" />
         <entry key="$PROJECT_DIR$/build.gradle" value="723359089" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="3304057629" />
@@ -1460,13 +1426,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/ServerException.java" />
+        <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/AbstractServer.java" />
+        <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/AbstractConcurentServer.java" />
+        <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/utils/AbsConcurrentServer.java" />
+        <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/AbsConcurrentServer.java" />
+        <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/utils/ServerException.java" />
+        <option value="$PROJECT_DIR$/InscriereNetworking/build.gradle" />
+        <option value="$PROJECT_DIR$/InscriereClient/src/main/java/utils/ShowMessage.java" />
+        <option value="$PROJECT_DIR$/InscriereClient/build.gradle" />
+        <option value="$PROJECT_DIR$/InscriereClient/src/main/java/utils/InscriereConfig.java" />
+        <option value="$PROJECT_DIR$/InscriereServer/src/main/resources/server.properties" />
+        <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/utils/AbstractServer.java" />
+        <option value="$PROJECT_DIR$/InscriereClient/src/main/resources/client.properties" />
+        <option value="$PROJECT_DIR$/InscriereServices/src/main/java/services/IInscriereServer.java" />
         <option value="$PROJECT_DIR$/InscriereServer/src/main/java/InscriereServer.java" />
         <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protocol/Request.java" />
         <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protocol/Response.java" />
         <option value="$PROJECT_DIR$/InscriereClient/src/main/resources/LoginView.fxml" />
         <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protocol/InscriereServerWorker.java" />
         <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/utils/InscriereConcurrentServer.java" />
-        <option value="$PROJECT_DIR$/InscriereServer/src/main/resources/configurare.xml" />
+        <option value="$PROJECT_DIR$/InscriereModel/src/main/java/model/User.java" />
         <option value="$PROJECT_DIR$/InscriereClient/src/main/resources/InscriereView.fxml" />
         <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/dto/ProbaDTO.java" />
         <option value="$PROJECT_DIR$/InscriereServices/src/main/java/services/dto/ProbaDTO.java" />
@@ -1481,36 +1461,22 @@
         <option value="$PROJECT_DIR$/InscriereServices/src/main/java/services/IInscriereObservable.java" />
         <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protocol/RequestType.java" />
         <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protocol/InscriereClientWorker.java" />
+        <option value="$PROJECT_DIR$/InscriereClient/src/main/java/gui/InscriereController.java" />
+        <option value="$PROJECT_DIR$/InscriereServer/src/main/java/InscriereService.java" />
         <option value="$PROJECT_DIR$/InscriereClient/src/main/java/gui/LoginController.java" />
         <option value="$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protocol/InscriereServerProxy.java" />
         <option value="$PROJECT_DIR$/InscriereClient/src/main/java/StartClient.java" />
         <option value="$PROJECT_DIR$/InscriereServices/src/main/java/services/IInscriereService.java" />
-        <option value="$PROJECT_DIR$/InscriereRepository/src/main/resources/User.hbm" />
-        <option value="$PROJECT_DIR$/InscriereServer/src/main/java/InscriereService.java" />
-        <option value="$PROJECT_DIR$/InscriereRepository/src/main/java/repository/SQLiteDialect.java" />
-        <option value="$PROJECT_DIR$/InscriereRepository/src/main/java/dialect/SQLiteDialect.java" />
-        <option value="$PROJECT_DIR$/InscriereRepository/src/main/java/dialect/SQLiteDialectIdentityColumnSupport.java" />
-        <option value="$PROJECT_DIR$/InscriereRepository/src/main/resources/hibernate.cfg" />
-        <option value="$PROJECT_DIR$/InscriereClient/src/main/java/dialect/SQLiteDialect.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg" />
-        <option value="$PROJECT_DIR$/src/main/resources/User.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/InscriereServer/src/test/resources/bdTest.properties" />
-        <option value="$PROJECT_DIR$/InscriereServer/src/test/java/UserDBRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/InscriereRepository/src/test/resources/UserTest.hbm.xml" />
-        <option value="$PROJECT_DIR$/InscriereRepository/src/test/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/InscriereRepository/src/test/resources/hibernateTest.cfg.xml" />
-        <option value="$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/InscriereClient/src/main/java/gui/InscriereController.java" />
-        <option value="$PROJECT_DIR$/InscriereModel/src/main/java/model/User.java" />
-        <option value="$PROJECT_DIR$/InscriereRepository/build.gradle" />
-        <option value="$PROJECT_DIR$/InscriereServer/src/main/resources/User.hbm.xml" />
-        <option value="$PROJECT_DIR$/InscriereServer/build.gradle" />
-        <option value="$PROJECT_DIR$/InscriereRepository/src/main/java/repository/UserDBRepository.java" />
         <option value="$PROJECT_DIR$/InscriereServer/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/InscriereServer/src/main/java/StartServer.java" />
+        <option value="$PROJECT_DIR$/InscriereServer/build.gradle" />
+        <option value="$PROJECT_DIR$/InscriereRepository/src/test/resources/hibernateTest.cfg.xml" />
+        <option value="$PROJECT_DIR$/InscriereRepository/src/main/java/org/hibernate/dialect/SQLiteDialect.java" />
+        <option value="$PROJECT_DIR$/InscriereRepository/build.gradle" />
         <option value="$PROJECT_DIR$/InscriereRepository/src/main/java/util/HibernateUtils.java" />
+        <option value="$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/InscriereRepository/src/main/java/repository/UserDBRepository.java" />
+        <option value="$PROJECT_DIR$/InscriereServer/src/main/java/StartServer.java" />
+        <option value="$PROJECT_DIR$/InscriereServer/src/main/resources/configurare.xml" />
       </list>
     </option>
   </component>
@@ -1526,16 +1492,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1927" />
     <option name="y" value="-321" />
-    <option name="width" value="1888" />
+    <option name="width" value="1726" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -1637,68 +1597,6 @@
             <path>
               <item name="Lab3GUIServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab3GUIServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="InscriereRepository" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab3GUIServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab3GUIServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="InscriereRepository" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab3GUIServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab3GUIServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="InscriereRepository" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab3GUIServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab3GUIServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="InscriereRepository" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab3GUIServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab3GUIServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="InscriereRepository" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab3GUIServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab3GUIServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="InscriereRepository" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab3GUIServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab3GUIServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="InscriereRepository" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab3GUIServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab3GUIServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="InscriereRepository" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Lab3GUIServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab3GUIServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="InscriereServer" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -1765,7 +1663,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1774,22 +1672,17 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/InscriereServer/src/main/resources/User.hbm.xml" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/InscriereClient/src/main/java" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/jre64/lib/ext/jfxrt.jar!/" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="repository" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\cosov\IdeaProjects\Lab3GUIServer\src\main\resources" />
-      <recent name="C:\Users\cosov\IdeaProjects\Lab3GUIServer\InscriereServer\src\main\resources" />
       <recent name="C:\Users\cosov\IdeaProjects\Lab3GUIServer\InscriereRepository\src\main\resources\repository" />
       <recent name="C:\Users\cosov\IdeaProjects\Lab3GUIServer\InscriereNetworking\src\main\java" />
     </key>
@@ -1988,15 +1881,15 @@
       <item index="0" class="java.lang.String" itemvalue="Gradle.Lab3GUIServer:InscriereServices [build]" />
       <item index="1" class="java.lang.String" itemvalue="Application.StartServer" />
       <item index="2" class="java.lang.String" itemvalue="Application.StartClient" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.UserDBRepositoryTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UserDBRepositoryTest.save" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.UserDBRepositoryTest.save" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UserDBRepositoryTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.StartClient" />
         <item index="1" class="java.lang.String" itemvalue="Application.StartServer" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserDBRepositoryTest.save" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserDBRepositoryTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserDBRepositoryTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserDBRepositoryTest.save" />
         <item index="4" class="java.lang.String" itemvalue="Gradle.Lab3GUIServer:InscriereServices [build]" />
       </list>
     </recent_temporary>
@@ -2026,49 +1919,43 @@
       <workItem from="1522946823799" duration="4435000" />
       <workItem from="1523197701044" duration="3844000" />
       <workItem from="1524029486913" duration="244000" />
-      <workItem from="1525276765805" duration="14754000" />
-      <workItem from="1525326676358" duration="1357000" />
-      <workItem from="1525328125658" duration="30000" />
-      <workItem from="1525339312036" duration="5030000" />
-      <workItem from="1525362028115" duration="1632000" />
-      <workItem from="1525364541976" duration="4028000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserDBRepositoryTest - 2018.05.02 at 22h 13m 33s.xml">
+    <history-entry file="UserDBRepositoryTest - 2018.05.03 at 22h 32m 06s.xml">
       <configuration name="UserDBRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBRepositoryTest - 2018.05.02 at 22h 18m 46s.xml">
+    <history-entry file="UserDBRepositoryTest - 2018.05.03 at 22h 33m 36s.xml">
       <configuration name="UserDBRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBRepositoryTest - 2018.05.02 at 22h 20m 20s.xml">
+    <history-entry file="UserDBRepositoryTest - 2018.05.03 at 22h 36m 17s.xml">
       <configuration name="UserDBRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBRepositoryTest - 2018.05.02 at 22h 21m 23s.xml">
+    <history-entry file="UserDBRepositoryTest - 2018.05.03 at 22h 46m 51s.xml">
       <configuration name="UserDBRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBRepositoryTest_save - 2018.05.02 at 22h 22m 40s.xml">
-      <configuration name="UserDBRepositoryTest.save" configurationId="JUnit" />
+    <history-entry file="UserDBRepositoryTest - 2018.05.03 at 22h 47m 41s.xml">
+      <configuration name="UserDBRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBRepositoryTest_save - 2018.05.02 at 22h 24m 43s.xml">
-      <configuration name="UserDBRepositoryTest.save" configurationId="JUnit" />
+    <history-entry file="UserDBRepositoryTest - 2018.05.03 at 22h 47m 44s.xml">
+      <configuration name="UserDBRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBRepositoryTest_save - 2018.05.02 at 22h 27m 17s.xml">
-      <configuration name="UserDBRepositoryTest.save" configurationId="JUnit" />
+    <history-entry file="UserDBRepositoryTest - 2018.05.03 at 22h 51m 50s.xml">
+      <configuration name="UserDBRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBRepositoryTest_save - 2018.05.02 at 22h 29m 22s.xml">
-      <configuration name="UserDBRepositoryTest.save" configurationId="JUnit" />
+    <history-entry file="UserDBRepositoryTest - 2018.05.03 at 22h 52m 25s.xml">
+      <configuration name="UserDBRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBRepositoryTest_save - 2018.05.02 at 22h 58m 11s.xml">
-      <configuration name="UserDBRepositoryTest.save" configurationId="JUnit" />
+    <history-entry file="UserDBRepositoryTest - 2018.05.03 at 23h 05m 39s.xml">
+      <configuration name="UserDBRepositoryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserDBRepositoryTest_update - 2018.03.25 at 13h 23m 26s.xml">
-      <configuration name="UserDBRepositoryTest.update" configurationId="JUnit" />
+    <history-entry file="UserDBRepositoryTest - 2018.05.03 at 23h 08m 13s.xml">
+      <configuration name="UserDBRepositoryTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88596000" />
+    <option name="totallyTimeSpent" value="66999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2080,15 +1967,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1927" y="-321" width="1888" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-1927" y="-321" width="1726" height="1047" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15317287" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30634573" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24930748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2100,22 +1987,44 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40546447" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40546447" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21861471" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22133863" sideWeight="0.50735295" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21498907" sideWeight="0.49264705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46994534" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22100656" sideWeight="0.50735295" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23589435" sideWeight="0.49264705" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63265306" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810047" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24930748" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45751634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Log4jMonitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32669982" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32349727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40359476" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33167496" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19623233" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63265306" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2162,8 +2071,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java</url>
-          <line>125</line>
-          <properties class="repository.UserDBRepositoryTest" method="update">
+          <line>100</line>
+          <properties class="repository.UserDBRepositoryTest" method="findOne">
             <option name="EMULATED" value="true" />
           </properties>
         </line-breakpoint>
@@ -2186,33 +2095,170 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java</url>
-          <line>98</line>
+          <url>file://$PROJECT_DIR$/InscriereRepository/src/main/java/util/HibernateUtils.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/InscriereServer/src/main/java/StartServer.java</url>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java</url>
-          <line>51</line>
+          <line>90</line>
           <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/UserDBRepository.java</url>
-          <line>148</line>
+          <url>file://$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java</url>
+          <line>120</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/JdbcUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/InscriereDBRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/ProbaDBRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Program Files/Java/jdk-9/lib/src.zip!/javafx.fxml/com/sun/javafx/fxml/MethodHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereServices/src/main/java/services/InscriereServiceException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protocol/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereClient/src/main/resources/InscriereView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="248" lean-forward="false" selection-start-line="12" selection-start-column="248" selection-end-line="12" selection-end-column="248" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereClient/src/main/resources/LoginView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="9" column="244" lean-forward="false" selection-start-line="9" selection-start-column="244" selection-end-line="9" selection-end-column="244" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/java/dto/ProbaDTO.java" />
+    <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/dto/ProbaDTO.java" />
+    <entry file="file://$PROJECT_DIR$/InscriereModel/src/main/java/model/Proba.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereModel/src/main/java/model/Participant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereModel/src/main/java/model/Inscriere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="74" lean-forward="false" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/dto/InscriereDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereModel/src/main/java/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereServices/src/main/java/services/IInscriereObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://F:/Program Files/Java/jdk-9/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="1785" column="0" lean-forward="false" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereServices/src/main/java/services/IInscriereObservable.java" />
+    <entry file="file://$PROJECT_DIR$/InscriereClient/src/main/java/gui/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereClient/src/main/java/StartClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protocol/InscriereClientWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="126" column="51" lean-forward="false" selection-start-line="126" selection-start-column="51" selection-end-line="126" selection-end-column="51" />
+        <state relative-caret-position="1377">
+          <caret line="93" column="12" lean-forward="false" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -2225,9 +2271,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/protocol/InscriereServerProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2329">
-          <caret line="158" column="39" lean-forward="false" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6148#6149#0" expanded="true" />
+            <element signature="e#6219#6220#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2259,6 +2309,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/server.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/InscriereServices/src/main/java/services/IInscriereService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -2268,180 +2326,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriereServices/src/main/java/services/dto/ParticipantProbeDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/java/org/hibernate/dialect/SQLiteDialectIdentityColumnSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="71" lean-forward="false" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/MPP/Curs8/HibernateExample/src/main/java/org/hibernate/dialect/SQLiteDialect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/IParticipantRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/ParticipantDBRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="76" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="76" />
-          <folding>
-            <marker date="1521972746336" expanded="true" signature="1149:1192" ph="SELECT count... Participant" />
-            <marker date="1521972746336" expanded="true" signature="1586:1640" ph="insert into Participant... " />
-            <marker date="1521972746336" expanded="true" signature="2051:2085" ph="DELETE FROM Participant... " />
-            <marker date="1521972746336" expanded="true" signature="2473:2528" ph="UPDATE main.Participant... " />
-            <marker date="1521972746336" expanded="true" signature="2961:3025" ph="SELECT P.id,... Participant" />
-            <marker date="1521972746336" expanded="true" signature="3649:3680" ph="SELECT * FRO... Participant" />
-            <marker date="1521972746336" expanded="true" signature="4209:4290" ph="SELECT P.id,... Participant" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/test/java/repository/ParticipantDBRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1521973178275" expanded="true" signature="1356:1384" ph="DELETE FROM main.Participant... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/IInscriereRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="78" lean-forward="false" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="78" />
-          <folding />
+        <state relative-caret-position="340">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="34" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/java/InscriereService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-          <folding>
-            <element signature="e#2184#2185#0" expanded="false" />
-            <element signature="e#2234#2235#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereClient/src/main/java/dialect/SQLiteDialect.java" />
-    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/java/org/hibernate/dialect/SQLiteDialect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="37" column="37" lean-forward="false" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/User.hbm" />
-    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/configurare.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="84" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="84" />
+        <state relative-caret-position="17">
+          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/hibernate.xml" />
-    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/hibernate.properties" />
-    <entry file="file://$PROJECT_DIR$/InscriereServer/src/test/resources/bdTest.properties" />
-    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/test/resources/UserTest.hbm.xml" />
-    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/test/java/repository/ProbaDBRepositoryTest.java">
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/resources/repository/User.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-          <folding>
-            <marker date="1521973178306" expanded="true" signature="1309:1331" ph="DELETE FROM main.Proba... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/test/resources/hibernateTest.cfg.xml" />
-    <entry file="file://$PROJECT_DIR$/InscriereModel/src/main/java/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="80">
+          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereClient/src/main/java/StartClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="54" column="46" lean-forward="false" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereServer/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/e9167034/abef1810-b76d-40ad-99c5-d9d1463602b1/main.User" />
-    <entry file="das://table:/e9167034/bb07d46a-ff62-4e53-b869-7fc1f130e668/main.User" />
-    <entry file="das://table:/e9167034/ffc1ada0-80c2-46f8-8eed-c964c881d359/main.User" />
-    <entry file="file://$PROJECT_DIR$/InscriereModel/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereClient/src/main/java/gui/InscriereController.java">
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/dialect/SQLiteDialectIdentityColumnSupport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="uml://Persistence/JavaeeElement:/e9167034/hibernate.cfg.xml/InscriereServer_main/hibernate/Hibernate/PersistenceModel">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Persistence</ID>
-          <OriginalElement>JavaeeElement:/e9167034/hibernate.cfg.xml/InscriereServer_main/hibernate/Hibernate/PersistenceModel</OriginalElement>
-          <nodes>
-            <node x="" y="">User#file://C:/Users/cosov/IdeaProjects/Lab3GUIServer/InscriereServer/src/main/resources/User.hbm.xml</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="65.0" y="37.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Embeddables</Category>
-            <Category>Properties</Category>
-            <Category>Superclasses</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
+    <entry file="file://$PROJECT_DIR$/InscriereServer/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/dialect/SQLiteDialect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding>
+            <element signature="e#8259#8701#0" expanded="true" />
+            <element signature="e#8700#8701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/test/resources/hibernateTest.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2453,82 +2406,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/server.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/InscriereRepository/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
-          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/User.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/utils/InscriereConcurrentServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/utils/AbstractConcurrentServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/net/ServerSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="58" column="6" lean-forward="false" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriereNetworking/src/main/java/network/utils/AbstractServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="304">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java">
+    <entry file="file://$PROJECT_DIR$/InscriereClient/src/main/java/gui/InscriereController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="131" column="100" lean-forward="false" selection-start-line="131" selection-start-column="68" selection-end-line="131" selection-end-column="100" />
-          <folding>
-            <marker date="1525289960504" expanded="true" signature="2290:2311" ph="DELETE FROM main.User... " />
-          </folding>
+        <state relative-caret-position="-256">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/UserDBRepository.java">
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/util/HibernateUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="367">
+          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
           <folding>
-            <marker date="1525367296297" expanded="true" signature="820:852" ph="SELECT count... User" />
-            <marker date="1525367296297" expanded="true" signature="2290:2321" ph="DELETE FROM User... " />
-            <marker date="1525367296297" expanded="true" signature="3299:3338" ph="UPDATE User... " />
-            <marker date="1525367296297" expanded="true" signature="3728:3781" ph="SELECT U.use... User" />
-            <marker date="1525367296297" expanded="true" signature="4321:4340" ph="SELECT * FRO... User" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2540,31 +2447,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/hibernate.cfg.xml">
+    <entry file="das://table:/e9167034/133680a1-9b6f-4eca-818e-13d0bd519d34/main.User">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/IRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="112">
+          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-5.2.16.Final.jar!/org/hibernate/internal/AbstractSharedSessionContract.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="95" column="57" lean-forward="false" selection-start-line="95" selection-start-column="57" selection-end-line="95" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/test/java/repository/UserDBRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="917">
+          <caret line="108" column="35" lean-forward="false" selection-start-line="108" selection-start-column="35" selection-end-line="108" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/repository/UserDBRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="47" column="67" lean-forward="false" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/java/StartServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="180">
+          <caret line="52" column="90" lean-forward="false" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="90" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1525378289248" expanded="true" signature="2998:3089" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InscriereRepository/src/main/java/util/HibernateUtils.java">
+    <entry file="file://$PROJECT_DIR$/InscriereServer/src/main/resources/configurare.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2577,7 +2513,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2321839" />
+                <option value="0.3770115" />
               </list>
             </option>
           </splitter-proportions>
@@ -2600,7 +2536,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2321839" />
+                <option value="0.3770115" />
               </list>
             </option>
           </splitter-proportions>
@@ -2612,7 +2548,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3770115" />
               </list>
             </option>
           </splitter-proportions>
@@ -2620,12 +2556,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>InscriereRepository_main|InscriereRepository</last-edited>
+          <last-edited>InscriereClient_main|InscriereClient</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.3770115" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -2645,11 +2580,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: junit:junit:4.12</last-edited>
+          <last-edited>Gradle: org.dialect.hibernate:dialect.hibernate-core:5.2.10.Final</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.3770115" />
               </list>
             </option>
           </splitter-proportions>

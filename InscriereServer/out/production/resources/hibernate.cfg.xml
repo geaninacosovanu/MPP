@@ -6,15 +6,15 @@
 <hibernate-configuration>
     <session-factory>
 
-        <property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
+        <property name="dialect">dialect.SQLiteDialect</property>
         <property name="connection.driver_class">org.sqlite.JDBC</property>
         <property name="connection.url">jdbc:sqlite:C:/Users/cosov/Documents/SQLiteStudio/BDPb3</property>
 
-        <!--<property name="hibernate.hbm2ddl.auto">update</property>-->
+        <!--<property name="dialect.hibernate.hbm2ddl.auto">update</property>-->
 
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
         <property name="format_sql">true</property>
-        <mapping resource="User.hbm.xml"/>
+        <mapping resource="repository/User.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>
