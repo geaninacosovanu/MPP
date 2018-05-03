@@ -17,7 +17,7 @@ import model.Inscriere;
 import model.Participant;
 import model.Proba;
 import model.User;
-import repository.RepositoryException;
+//import repository.RepositoryException;
 import services.IInscriereObserver;
 import services.IInscriereService;
 import services.InscriereServiceException;
@@ -166,8 +166,8 @@ public class InscriereController implements IInscriereObserver {
             textFieldVarsta.clear();
             listViewProbe.getSelectionModel().clearSelection();
             checkBoxParticipantExistent.setSelected(false);
-        } catch (RepositoryException e) {
-            ShowMessage.showMessage(Alert.AlertType.ERROR, "Eroare", e.getMessage());
+//        } catch (RepositoryException e) {
+//            ShowMessage.showMessage(Alert.AlertType.ERROR, "Eroare", e.getMessage());
         } catch (ValidationException e) {
             ShowMessage.showMessage(Alert.AlertType.ERROR, "Eroare", e.getMessage());
         } catch (InscriereServiceException e) {

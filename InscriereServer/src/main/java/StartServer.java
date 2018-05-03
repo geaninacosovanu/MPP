@@ -1,15 +1,43 @@
+import jdk.jfr.StackTrace;
+import model.Inscriere;
+import model.Participant;
+import model.Proba;
+import model.User;
 import network.utils.AbstractServer;
 import network.utils.InscriereConcurrentServer;
 import network.utils.ServerException;
+import org.hibernate.Hibernate;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import repository.*;
 import services.IInscriereService;
+import util.HibernateUtils;
+import utils.Pair;
+import validator.*;
 
 import java.io.IOException;
 import java.util.Properties;
 
 public class StartServer {
+
     public static void main(String[] args) {
+        try {
+            initServer();
+        } catch (Exception e) {
+            System.out.println(e);
+        } finally {
+            HibernateUtils.close();
+        }
+
+
+    }
+
+    private static void initServer() {
         Properties serverProps = new Properties();
         try {
             serverProps.load(StartServer.class.getResourceAsStream("/server.properties"));
@@ -17,20 +45,29 @@ public class StartServer {
             System.err.println("Eroare la incarcarea fisierului de proprietati");
             return;
         }
-        ApplicationContext context = new ClassPathXmlApplicationContext("configurare.xml");
-        IInscriereService service = context.getBean(InscriereService.class);
+        String propFile = "InscriereServer/src/main/resources/server.properties";
+        Validator<User> userValidator = new UserValidator();
+        Validator<Proba> probaValidator = new ProbaValidator();
+        Validator<Participant> participantValidator = new ParticipantValidator();
+        Validator<Inscriere> inscriereValidator = new InscriereValidator();
+        IUserRepository userRepo = new UserDBRepository(userValidator, HibernateUtils.getSessionFactory("hibernate.cfg.xml"));
+        IProbaRepository probaRepo = new ProbaDBRepository(probaValidator, propFile);
+        IParticipantRepository partRepo = new ParticipantDBRepository(participantValidator, propFile);
+        IInscriereRepository insRepo = new InscriereDBRepository(inscriereValidator, propFile);
+
+        IInscriereService service = new InscriereService(partRepo, probaRepo, insRepo, userRepo);
         int serverPort = 5000;
         try {
             serverPort = Integer.parseInt(serverProps.getProperty("server.port"));
-        }catch(NumberFormatException e){
-            System.err.println("Port gresit "+e.getMessage());
+        } catch (NumberFormatException e) {
+            System.err.println("Port gresit " + e.getMessage());
 
         }
-        System.out.println("Starting server on port: "+serverPort);
-        AbstractServer server = new InscriereConcurrentServer(serverPort,service);
-        try{
+        System.out.println("Starting server on port: " + serverPort);
+        AbstractServer server = new InscriereConcurrentServer(serverPort, service);
+        try {
             server.start();
-        }catch (ServerException e){
+        } catch (ServerException e) {
             System.err.println("Eroare pornire server" + e.getMessage());
         }
     }

@@ -2,6 +2,11 @@ import model.Inscriere;
 import model.Participant;
 import model.Proba;
 import model.User;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.Metadata;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import repository.*;
 import services.IInscriereObserver;
 import services.IInscriereService;
@@ -16,13 +21,12 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class InscriereService implements IInscriereService {
+    private final int nrThreaduri = 10;
     private IParticipantRepository participantRepository;
     private IProbaRepository probaRepository;
     private IInscriereRepository inscriereRepository;
     private IUserRepository userRepository;
     private Map<String, IInscriereObserver> loggedClients;
-
-    private final int nrThreaduri = 10;
 
     public InscriereService(IParticipantRepository participantRepository, IProbaRepository probaRepository, IInscriereRepository inscriereRepository, IUserRepository userRepository) {
         this.participantRepository = participantRepository;
@@ -31,12 +35,11 @@ public class InscriereService implements IInscriereService {
         this.userRepository = userRepository;
         loggedClients = new ConcurrentHashMap<>();
     }
-
     private void notifyInscriereAdded() {
         ExecutorService executor = Executors.newFixedThreadPool(nrThreaduri);
-        for(IInscriereObserver obs:loggedClients.values()){
+        for (IInscriereObserver obs : loggedClients.values()) {
             executor.execute(() -> {
-            System.out.println("Notifying client inscriere added...");
+                System.out.println("Notifying client inscriere added...");
                 try {
                     obs.inscriereAdded();
                 } catch (InscriereServiceException e) {
@@ -49,15 +52,16 @@ public class InscriereService implements IInscriereService {
     }
 
     @Override
-    public synchronized void logout(User user, IInscriereObserver client)  {
+    public synchronized void logout(User user, IInscriereObserver client) {
         loggedClients.remove(user.getId());
     }
 
     @Override
-    public synchronized boolean login(String username, String parola,IInscriereObserver client) {
+    public synchronized boolean login(String username, String parola, IInscriereObserver client) {
         loggedClients.put(username, client);
         return userRepository.exists(new User(username, parola));
     }
+
     @Override
     public synchronized List<ProbaDTO> getAllProba() {
         List<ProbaDTO> all = new LinkedList<>();
@@ -80,7 +84,7 @@ public class InscriereService implements IInscriereService {
     }
 
     @Override
-    public synchronized void saveInscriere(String nume, Integer varsta, List<Proba> probe,boolean existent) throws ValidationException, InscriereServiceException {
+    public synchronized void saveInscriere(String nume, Integer varsta, List<Proba> probe, boolean existent) throws ValidationException, InscriereServiceException {
         Participant p = null;
         if (existent == false && getParticipant(nume, varsta) == null) {
             Integer id;
@@ -109,8 +113,6 @@ public class InscriereService implements IInscriereService {
         }
 
     }
-
-
 
 
     public synchronized Participant getParticipant(String nume, Integer varsta) {

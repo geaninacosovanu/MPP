@@ -3,22 +3,25 @@ package model;
 import java.io.Serializable;
 
 public class User implements HasId<String>,Serializable{
-    private String userId;
+    private String id;
     private String parola;
 
-    public User(String userId, String parola) {
-        this.userId = userId;
+    public User(String id, String parola) {
+        this.id = id;
         this.parola = parola;
+    }
+
+    public User() {
     }
 
     @Override
     public String getId() {
-        return userId;
+        return id;
     }
 
     @Override
     public void setId(String s) {
-        this.userId=s;
+        this.id =s;
     }
 
     public String getParola() {
@@ -32,7 +35,7 @@ public class User implements HasId<String>,Serializable{
     @Override
     public String toString() {
         return "model.User{" +
-                "userId='" + userId + '\'' +
+                "id='" + id + '\'' +
                 ", parola='" + parola + '\'' +
                 '}';
     }

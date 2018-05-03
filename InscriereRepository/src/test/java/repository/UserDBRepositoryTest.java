@@ -5,6 +5,10 @@ import model.Inscriere;
 import model.Participant;
 import model.Proba;
 import model.User;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -23,7 +27,31 @@ import static org.junit.Assert.*;
 public class UserDBRepositoryTest {
     Validator<User> userValidator = new UserValidator();
     String propFile = "src/test/resources/bdTest.properties";
-    IUserRepository userRepository = new UserDBRepository(userValidator, propFile);
+
+    IUserRepository userRepository;
+
+    private static SessionFactory sessionFactory;
+    private static void close() {
+        if (sessionFactory != null)
+            sessionFactory.close();
+    }
+
+//    public UserDBRepositoryTest() {
+//        initialize();
+//        userRepository=new UserDBRepository(userValidator,sessionFactory);
+//    }
+//
+//    private static void initialize() {
+//        final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
+//                .configure() // configures settings from hibernateTest.cfg.xml
+//                .build();
+//        try {
+//            sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
+//        }
+//        catch (Exception e) {
+//            StandardServiceRegistryBuilder.destroy( registry );
+//        }
+//    }
 
     @After
     public void tearDown() throws Exception {
