@@ -14,6 +14,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereRepository.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereRepository.iml" group="InscriereRepository" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_main.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_main.iml" group="InscriereRepository" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_test.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereRepository/InscriereRepository_test.iml" group="InscriereRepository" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereRestServices.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereRestServices.iml" group="InscriereRestServices" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereRestServices/InscriereRestServices_main.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereRestServices/InscriereRestServices_main.iml" group="InscriereRestServices" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereRestServices/InscriereRestServices_test.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereRestServices/InscriereRestServices_test.iml" group="InscriereRestServices" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer.iml" group="InscriereServer" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_main.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_main.iml" group="InscriereServer" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_test.iml" filepath="$PROJECT_DIR$/.idea/modules/InscriereServer/InscriereServer_test.iml" group="InscriereServer" />

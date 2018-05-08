@@ -1,6 +1,7 @@
 package repository;
 
 import model.Proba;
+import org.springframework.stereotype.Component;
 import validator.ValidationException;
 import validator.Validator;
 
@@ -11,7 +12,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-
+@Component
 public class ProbaDBRepository implements IProbaRepository {
     private Validator<Proba> probaValidator;
     private Connection connection;
@@ -44,10 +45,10 @@ public class ProbaDBRepository implements IProbaRepository {
     @Override
     public void save(Proba entity) throws ValidationException {
         probaValidator.validate(entity);
-        try (PreparedStatement s = connection.prepareStatement("insert into Proba(id,nume,distanta) values (?,?,?)")) {
-            s.setInt(1,entity.getId());
-            s.setString(2, entity.getNume());
-            s.setFloat(3, entity.getDistanta());
+        try (PreparedStatement s = connection.prepareStatement("insert into Proba(nume,distanta) values (?,?)")) {
+           // s.setInt(1,entity.getId());
+            s.setString(1, entity.getNume());
+            s.setFloat(2, entity.getDistanta());
             s.executeUpdate();
         } catch (SQLException e) {
             throw new RepositoryException("Proba exista deja!");
@@ -67,7 +68,7 @@ public class ProbaDBRepository implements IProbaRepository {
     @Override
     public void update(Integer id, Proba entity) throws ValidationException {
         probaValidator.validate(entity);
-        try (PreparedStatement s = connection.prepareStatement("UPDATE Proba SET nume=?, distanta=? WHERE userId=?")) {
+        try (PreparedStatement s = connection.prepareStatement("UPDATE Proba SET nume=?, distanta=? WHERE id=?")) {
             s.setString(1, entity.getNume());
             s.setFloat(2, entity.getDistanta());
             s.setInt(3, id);

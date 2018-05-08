@@ -10,6 +10,8 @@
       <module name="InscriereNetworking_test" target="1.8" />
       <module name="InscriereRepository_main" target="1.9" />
       <module name="InscriereRepository_test" target="1.9" />
+      <module name="InscriereRestServices_main" target="1.8" />
+      <module name="InscriereRestServices_test" target="1.8" />
       <module name="InscriereServer_main" target="1.9" />
       <module name="InscriereServer_test" target="1.9" />
       <module name="InscriereServices_main" target="1.9" />

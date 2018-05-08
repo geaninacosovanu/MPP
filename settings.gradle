@@ -5,4 +5,5 @@ include 'InscriereServices'
 include 'InscriereClient'
 include 'InscriereServer'
 include 'InscriereNetworking'
+include 'InscriereRestServices'
 

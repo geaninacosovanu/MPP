@@ -1,6 +1,7 @@
 package repository;
 
 import model.User;
+import org.springframework.stereotype.Component;
 import validator.ValidationException;
 import validator.Validator;
 

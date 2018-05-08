@@ -7,11 +7,19 @@ public class Proba implements HasId<Integer>,Serializable{
     private String nume;
     private Float distanta;
 
+    public Proba(){
+        super();
+    }
+    public Proba(String nume, Float distanta) {
+        this.nume = nume;
+        this.distanta = distanta;
+    }
     public Proba(Integer id, String nume, Float distanta) {
         this.id = id;
         this.nume = nume;
         this.distanta = distanta;
     }
+
 
     public String getNume() {
         return nume;
