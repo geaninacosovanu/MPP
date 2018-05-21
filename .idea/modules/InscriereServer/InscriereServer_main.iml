@@ -18,12 +18,32 @@
     <orderEntry type="module" module-name="InscriereServices_main" />
     <orderEntry type="module" module-name="InscriereRepository_main" />
     <orderEntry type="module" module-name="InscriereModel_main" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jms:4.3.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-messaging:4.3.8.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-context:5.0.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-spring:5.14.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.8.8.1" level="project" />
     <orderEntry type="library" name="Gradle: org.xerial:sqlite-jdbc:3.16.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-pool:5.14.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-broker:5.14.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-openwire-legacy:5.14.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-client:5.14.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.activemq:activemq-jms-pool:5.14.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.13" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xbean:xbean-spring:4.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec:1.0.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-pool2:2.4.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.8.8" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-aop:5.0.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:4.3.8.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-beans:5.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-expression:5.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-core:5.0.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.fusesource.hawtbuf:hawtbuf:1.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec:1.0.1" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-jcl:5.0.4.RELEASE" level="project" />
   </component>
 </module>

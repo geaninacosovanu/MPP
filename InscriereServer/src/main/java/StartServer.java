@@ -3,6 +3,7 @@ import network.utils.InscriereConcurrentServer;
 import network.utils.ServerException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import server.InscriereService;
 import services.IInscriereService;
 
 import java.io.IOException;

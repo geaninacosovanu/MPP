@@ -35,12 +35,46 @@
         <constructor-arg value="InscriereServer/src/main/resources/server.properties"/>
 
     </bean>
-    <bean id="insService" class="InscriereService">
+    <!--<bean id="insService" class="server.InscriereService">-->
+        <!--<constructor-arg index="0" ref="partRepo"/>-->
+        <!--<constructor-arg index="1" ref="probaRepo"/>-->
+        <!--<constructor-arg index="2" ref="inscRepo"/>-->
+        <!--<constructor-arg index="3" ref="userRepo"/>-->
+    <!--</bean>-->
+
+
+    <util:properties id="jdbcProps" location="classpath:server.properties"/>
+    <bean id="connectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory"/>
+
+    <bean id="topic" class="org.apache.activemq.command.ActiveMQTopic">
+        <constructor-arg value="InscriereTopic"/>
+    </bean>
+
+    <bean id="converter" class="org.springframework.jms.support.converter.MappingJackson2MessageConverter">
+        <property name="targetType" value="TEXT"/>
+        <property name="typeIdPropertyName" value="_notification"/>
+    </bean>
+
+    <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+        <constructor-arg ref="connectionFactory"/>
+        <property name="defaultDestination" ref="topic"/>
+        <property name="messageConverter" ref="converter"/>
+    </bean>
+
+    <bean id="notificationService" class="server.NotificationService">
+        <constructor-arg ref="jmsTemplate"/>
+    </bean>
+
+    <bean id="inscriereServer" class="server.InscriereServiceAMS">
         <constructor-arg index="0" ref="partRepo"/>
         <constructor-arg index="1" ref="probaRepo"/>
         <constructor-arg index="2" ref="inscRepo"/>
         <constructor-arg index="3" ref="userRepo"/>
+        <constructor-arg ref="notificationService"/>
     </bean>
 
-
+    <bean id="chatTCPServer" class="network.utils.InscriereAMSConcurrentServer">
+        <constructor-arg value="#{jdbcProps.getProperty('server.port')}"/>
+        <constructor-arg ref="inscriereServer"/>
+    </bean>
 </beans>

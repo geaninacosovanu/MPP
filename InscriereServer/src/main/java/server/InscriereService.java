@@ -1,3 +1,5 @@
+package server;
+
 import model.Inscriere;
 import model.Participant;
 import model.Proba;
@@ -122,7 +124,7 @@ public class InscriereService implements IInscriereService {
     private IUserRepository userRepository;
     //private List<Observer<Inscriere>> inscriereObservers = new ArrayList<>();
 
-    public InscriereService(IParticipantRepository participantRepository, IProbaRepository probaRepository, IInscriereRepository inscriereRepository, IUserRepository userRepository) {
+    public server.InscriereService(IParticipantRepository participantRepository, IProbaRepository probaRepository, IInscriereRepository inscriereRepository, IUserRepository userRepository) {
         this.participantRepository = participantRepository;
         this.probaRepository = probaRepository;
         this.inscriereRepository = inscriereRepository;

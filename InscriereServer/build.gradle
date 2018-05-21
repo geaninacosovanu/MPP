@@ -16,6 +16,7 @@ dependencies {
     compile project (':InscriereNetworking')
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile 'org.springframework:spring-context:5.0.4.RELEASE'
+    compile "org.apache.activemq:activemq-spring:5.14.5"
 }
 jar {
     manifest
